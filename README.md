@@ -4,6 +4,7 @@ Service that checks accordance of the given bandwith in master playlist with act
 To use the service you need to build image and start the container. Here are examples of the commands:
 
 ```docker build -t check-bandwidth .```
+
 ```docker run -d -p 5000:5000 --name check-bandwidth-service check-bandwidth```
 
 Service will be ready to use at http://localhost:5000
