@@ -1,0 +1,7 @@
+<form action="/result" method="post">
+    {{ form.csrf_token }}
+    <div>Результаты</div><br>
+    {{ form.result (cols="300", rows="50")}} <br><br>
+    {{ form.back }} <br><br>
+    <meta http-equiv="refresh" content="5">
+</form>

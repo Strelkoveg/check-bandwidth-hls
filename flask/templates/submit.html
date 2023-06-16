@@ -1,0 +1,6 @@
+<form action="/check_urls" method="post">
+    {{ form.csrf_token }}
+    <div>Список URL для проверки</div><br>
+    {{ form.urls (cols="150", rows="10", placeholder="Введите список URL (каждый URL в отдельной строке)")}} <br><br>
+    {{ form.submit }} <br><br>
+</form>
